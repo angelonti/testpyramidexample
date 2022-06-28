@@ -12,14 +12,12 @@ import static spark.Spark.*;
 
 // change to be deployed
 
-///triggering anocher build
-
 public class RxEndpoints {
    public static void initalizeEndpoints() {
 
       Gson gson = new Gson();
 
-      // an api call
+      // another api call
       post("/rx", (request, response) -> {
          ValidatePrescriptionCommand command = new ValidatePrescriptionCommand(RxValidator.getDefaultValidator());
          Prescription rx = gson.fromJson(request.body(), Prescription.class);
