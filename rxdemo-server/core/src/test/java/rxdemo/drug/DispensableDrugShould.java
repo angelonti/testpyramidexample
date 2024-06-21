@@ -4,6 +4,8 @@ import org.junit.Assert;
 import org.junit.Test;
 import rxdemo.vendordata.EDrugClassification;
 
+import static junit.framework.TestCase.fail;
+
 public class DispensableDrugShould {
 
    // testing a change.
